@@ -1,5 +1,5 @@
 import 'package:chat_app/main.dart';
-import 'package:chat_app/pages/ConversationPageList.dart';
+import 'package:chat_app/pages/ConversationPageSlide.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
@@ -7,6 +7,6 @@ void main() {
     // Build our app and trigger a frame.
     await tester.pumpWidget(ChatApp());
 
-    expect(find.byType(ConversationPageList),findsOneWidget);
+    expect(find.byType(ConversationPageSlide),findsOneWidget);
   });
 }

@@ -1,5 +1,5 @@
 import 'package:chat_app/pages/ConversationPage.dart';
-import 'package:chat_app/pages/ConversationPageList.dart';
+import 'package:chat_app/pages/ConversationPageSlide.dart';
 import 'package:chat_app/widgets/InputWidget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';

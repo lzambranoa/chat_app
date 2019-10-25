@@ -21,30 +21,17 @@ class _ConversationPageState extends State<ConversationPage> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-       child: Scaffold(
-         key: _scaffoldKey,
-         appBar: ChatAppBar(), 
-         body: Container(
-           color: Palette.otherMessageBackgroundColor,
-           child: Stack(
-             children: <Widget>[
-               ChatListWidget(),
-               GestureDetector(
-                 child: InputWidget(),
-                 onPanUpdate: (details) {
-                   if (details.delta.dy < 0) {
-                     _scaffoldKey.currentState.showBottomSheet<Null>((BuildContext context) {
-                       return ConversationBottomSheet();
-                     });
-                   }
-                 },
-               )
-             ],
-           ) ,
-           
-         ), //Barra de aplicaciones personalizada para la pantalla de chat
-       ),
+    return Column(
+      children: <Widget>[
+        Expanded(flex: 2, child: ChatAppBar()),
+        Expanded(
+          flex: 11,
+          child: Container(
+            color: Palette.otherMessageBackgroundColor,
+            child: ChatListWidget(),
+          ),
+        )
+      ],
     );
   }
 }
