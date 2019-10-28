@@ -1,4 +1,5 @@
 import 'package:chat_app/pages/ConversationPage.dart';
+import 'package:chat_app/pages/RegisterPage.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(ChatApp());
@@ -39,6 +40,6 @@ class _MyHomePageState extends State<MyHomePage> {
     // The Flutter framework has been optimized to make rerunning build methods
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
-    return ConversationPage();
+    return RegisterPage();
   }
 }

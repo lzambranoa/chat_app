@@ -1,8 +1,7 @@
 import 'package:chat_app/config/Palette.dart';
 import 'package:chat_app/widgets/ChatAppBar.dart';
 import 'package:chat_app/widgets/ChatListWidget.dart';
-import 'package:chat_app/widgets/ConversationBottomSheet.dart';
-import 'package:chat_app/widgets/InputWidget.dart';
+
 import 'package:flutter/material.dart';
 
 
@@ -17,7 +16,6 @@ class ConversationPage extends StatefulWidget {
 
 class _ConversationPageState extends State<ConversationPage> {
 
-  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
 
   @override
   Widget build(BuildContext context) {
